@@ -1,0 +1,6 @@
+name: PlayerHeadAxe
+author: kyunashi
+main: main.PlayerHeadAxe
+version: 0.1
+description: Axe that generates player heads
+api-version: 1.13
