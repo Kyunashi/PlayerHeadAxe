@@ -31,11 +31,11 @@ public final class PlayerHeadAxe extends JavaPlugin implements Listener {
 			ItemStack head = new ItemStack(Material.PLAYER_HEAD);
 			SkullMeta headMeta = (SkullMeta) head.getItemMeta();
 			
-			headMeta.setDisplayName(player.getName() + "\'s Kopf");
-			headMeta.setOwningPlayer((OfflinePlayer) player);
+			headMeta.setDisplayName(rightClicked.getName() + "\'s Kopf");
+			headMeta.setOwningPlayer((OfflinePlayer) rightClicked);
 
 			ArrayList<String> lore = new ArrayList<String>();
-			lore.add("Der abgeschlagene Kopf von " + player.getName());
+			lore.add("Der abgeschlagene Kopf von " + rightClicked.getName());
 			headMeta.setLore(lore);
 			
 			head.setItemMeta(headMeta);
